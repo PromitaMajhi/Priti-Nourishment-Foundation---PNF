@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Priti Nourishment Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Hind+Siliguri:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .milestone-row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .milestone-year {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            opacity: 0.3;
+            font-weight: 700;
+            min-width: 100px;
+        }
+    </style>
+</head>
+
+<body class="lang-en">
+
+    <!-- Navbar (Same as Home) -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
+                <div class="logo-text">
+                    <div class="logo-title">PNF Foundation</div>
+                    <div class="logo-subtitle">About Us</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="volunteer.html">Volunteer</a>
+            </div>
+            <div class="nav-cta">
+                <div class="lang-switcher">
+                    <div class="lang-btn" onclick="switchLang('en')">EN</div>
+                    <div class="lang-btn" onclick="switchLang('bn')">বাং</div>
+                </div>
+                <a href="donate.html" class="btn btn-primary">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Story -->
+    <section class="section" style="padding-top: 150px;">
+        <div class="container grid-2">
+            <div>
+                <span class="card-tag">Our Origin</span>
+                <h2 class="serif" style="font-size: 3.5rem; line-height: 1.1; margin: 20px 0;">Born from a <br><span
+                        style="color: var(--secondary); font-style: italic;">Bag of Hope.</span></h2>
+                <p>The Priti Nourishment Foundation began with a simple but powerful idea: what if we could help
+                    families eat better without needing to read? In 2024, a group of passionate young people in Bagerhat
+                    launched the Hanging Nutrition Bag Project.</p>
+                <div style="display: flex; gap: 30px; margin-top: 40px;">
+                    <div>
+                        <h4 style="color: var(--secondary);">Mission</h4>
+                        <p>Targeted nutrition education for vulnerable communities.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--secondary);">Vision</h4>
+                        <p>A Bangladesh where every mother has the foundation to thrive.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/IMG_20251107_155826.jpg" alt="About PNF"
+                    style="border-radius: 30px; box-shadow: var(--shadow-lg);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color:white">The People Behind PNF</h2>
+                <p style="color:rgba(255,255,255,0.7)">Our team of youth changemakers.</p>
+            </div>
+            <div class="team-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Priti</h3>
+                        <p>Founder & Executive Director</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Md. Hasan</h3>
+                        <p>Programs Manager</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Sadia Islam</h3>
+                        <p>Health Education Lead</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Arif Rahman</h3>
+                        <p>Research & M&E</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Nadia Sultana</h3>
+                        <p>Communications</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Jubayer Ahmed</h3>
+                        <p>Finance & Operations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Foundation Milestones</h2>
+            </div>
+            <div class="faq-container">
+                <div class="milestone-row">
+                    <div class="milestone-year">2024</div>
+                    <div>
+                        <h4>Inception</h4>
+                        <p>Launch of Hanging Nutrition Bag in Bagerhat. Support from GAIN & SUN Youth Network.</p>
+                    </div>
+                </div>
+                <div class="milestone-row" style="border:none">
+                    <div class="milestone-year">2025</div>
+                    <div>
+                        <h4>Expansion</h4>
+                        <p>Reached 25+ families and expanded health awareness campaigns to 5 more villages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

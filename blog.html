@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & News | Priti Nourishment Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="lang-en">
+
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
+                <div class="logo-text">
+                    <div class="logo-title">PNF Foundation</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html" class="active">Blog</a>
+            </div>
+            <a href="donate.html" class="btn btn-primary">Donate</a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Stories & Updates</h2>
+                <div style="display: flex; justify-content: center; gap: 15px; margin-top: 30px;">
+                    <button class="filter-btn active" onclick="switchBlog('all', this)">All</button>
+                    <button class="filter-btn" onclick="switchBlog('nutrition', this)">Nutrition</button>
+                    <button class="filter-btn" onclick="switchBlog('health', this)">Health</button>
+                </div>
+            </div>
+
+            <div class="grid-3" id="blogEntries">
+                <div class="card blog-card" data-cat="nutrition">
+                    <div class="card-img"><img src="img/IMG-20251119-WA0019.jpg" alt="Blog 1"></div>
+                    <div class="card-content">
+                        <span class="card-tag">Nutrition</span>
+                        <h3>Power of Visual Menus</h3>
+                        <p>How our simple bag design is reducing nutritional gaps in rural households.</p>
+                        <small>March 11, 2025 • 4 min read</small>
+                    </div>
+                </div>
+                <div class="card blog-card" data-cat="health">
+                    <div class="card-img"><img src="img/IMG-20251119-WA0021.jpg" alt="Blog 2"></div>
+                    <div class="card-content">
+                        <span class="card-tag">Health</span>
+                        <h3>Youth as Health Educators</h3>
+                        <p>Engaging local students to spread menstrual hygiene awareness safely.</p>
+                        <small>Feb 22, 2025 • 6 min read</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container" style="margin-top: 80px; text-align: center;">
+                <h3>Subscribe for Monthly Impact Reports</h3>
+                <p style="color: var(--text-muted); margin: 15px 0 25px;">Stay updated with our progress on the ground.
+                </p>
+                <div style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="Your Email"
+                        style="flex: 1; padding: 12px 20px; border-radius: 50px; border: 1px solid #ddd;">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        function switchBlog(filter, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.blog-card').forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-cat') === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

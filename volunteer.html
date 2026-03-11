@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Volunteer | Priti Nourishment Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            font-family: inherit;
+        }
+    </style>
+</head>
+
+<body class="lang-en">
+
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
+                <div class="logo-text">
+                    <div class="logo-title">PNF Foundation</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="volunteer.html" class="active">Volunteer</a>
+            </div>
+            <a href="donate.html" class="btn btn-primary">Donate</a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 150px;">
+        <div class="container grid-2">
+            <div>
+                <h2 class="serif" style="font-size: 3.5rem;">Be the Change.</h2>
+                <p style="margin: 20px 0;">PNF is a youth-led movement. We empower the younger generation to take charge
+                    of their community's health. Join our mission as a volunteer.</p>
+
+                <div class="faq-container" style="margin-top: 50px;">
+                    <h3 style="margin-bottom: 20px;">Common Questions</h3>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">Who can join? <span
+                                class="faq-icon">▼</span></div>
+                        <div class="faq-answer">Any youth aged 16-30 with a passion for nutrition.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">Training provided? <span
+                                class="faq-icon">▼</span></div>
+                        <div class="faq-answer">Yes, we provide 2 days of basic nutrition training.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h3>Volunteer Application</h3>
+                <form id="volunteerForm" style="margin-top: 30px;">
+                    <div class="form-group"><label>Full Name</label><input type="text" required></div>
+                    <div class="form-group"><label>Email Address</label><input type="email" required></div>
+                    <div class="form-group"><label>Phone/WhatsApp</label><input type="tel" required></div>
+                    <div class="form-group">
+                        <label>Role Interest</label>
+                        <select>
+                            <option>Field Survey</option>
+                            <option>Health Education</option>
+                            <option>Digital Advocacy</option>
+                            <option>Community Outreach</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label>Why do you want to join?</label><textarea rows="4"></textarea></div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('volunteerForm').onsubmit = function (e) {
+            e.preventDefault();
+            alert('Thank you for applying! Our team will contact you via WhatsApp shortly.');
+            this.reset();
+        }
+    </script>
+</body>
+
+</html>

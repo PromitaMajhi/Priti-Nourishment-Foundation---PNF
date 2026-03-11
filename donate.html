@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us | Priti Nourishment Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .amount-btn {
+            padding: 15px;
+            border: 2px solid var(--light);
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+
+        .amount-btn.active {
+            background: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body class="lang-en">
+
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
+                <div class="logo-text">
+                    <div class="logo-title">PNF Foundation</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="volunteer.html">Volunteer</a>
+            </div>
+            <a href="donate.html" class="btn btn-primary active">Donate</a>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 150px; text-align: center;">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-title">
+                <h2 class="serif" style="font-size: 4rem;">Select your impact.</h2>
+                <p>Choose an amount and see how it helps a family in Bagerhat.</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="amount-grid">
+                    <div class="amount-btn active" onclick="selAmt(500, 'Feeding one family for a week.', this)">৳ 500
+                    </div>
+                    <div class="amount-btn" onclick="selAmt(2000, 'Nutrition bags for 4 households.', this)">৳ 2,000
+                    </div>
+                    <div class="amount-btn" onclick="selAmt(5000, 'One month of community awareness camp.', this)">৳
+                        5,000</div>
+                </div>
+
+                <div id="impactDisplay"
+                    style="background: var(--light); padding: 30px; border-radius: 20px; margin-bottom: 40px;">
+                    <h4 style="color: var(--primary);">Impact: Feeding one family for a week.</h4>
+                </div>
+
+                <div class="grid-2" style="text-align: left;">
+                    <div>
+                        <h4 style="margin-bottom: 15px;">Manual Donation Info</h4>
+                        <p style="margin-bottom: 10px;"><strong>bKash/Nagad (Personal):</strong><br>+880 1927-704833</p>
+                        <p><strong>Bank Account:</strong><br>Priti Nourishment Foundation<br>Coming Soon...</p>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/8801927704833?text=I want to donate" class="btn btn-gold"
+                            style="width: 100%;">Confirm Donation via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        function selAmt(val, impact, btn) {
+            document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('impactDisplay').innerHTML = '<h4 style="color: var(--primary);">Impact: ' + impact + '</h4>';
+        }
+    </script>
+</body>
+
+</html>
