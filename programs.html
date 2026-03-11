@@ -4,107 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Programs | Priti Nourishment Foundation</title>
+    <title>Programs | Priti Nourishment Foundation</title>
     <link rel="stylesheet" href="css/style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;600;800&family=Hind+Siliguri:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body class="lang-en">
 
+    <!-- Navbar -->
     <nav class="navbar scrolled">
-        <div class="container nav-container">
+        <div class="nav-container">
             <a href="index.html" class="logo">
                 <img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
-                <div class="logo-text">
-                    <div class="logo-title">PNF Foundation</div>
-                </div>
+                <span class="logo-title">PNF Foundation</span>
             </a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.html">About</a>
                 <a href="programs.html" class="active">Programs</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="volunteer.html">Volunteer</a>
             </div>
-            <a href="donate.html" class="btn btn-primary">Donate</a>
+            <a href="donate.html" class="btn btn-primary" style="padding: 12px 28px;">Donate Now</a>
         </div>
     </nav>
 
-    <div class="section" style="padding-top: 150px; background: var(--primary); color: white; text-align: center;">
-        <h1 class="serif" style="font-size: 4rem;">Our Core Programs</h1>
-        <p style="opacity: 0.8; margin-top: 10px;">Strategic pillars for community nutrition and health.</p>
-    </div>
+    <!-- Header -->
+    <section class="section" style="padding-top: 180px; background: var(--bg-cream); text-align: center;">
+        <div class="container reveal">
+            <span class="eyebrow">Impact Pillars</span>
+            <h1 style="font-size: clamp(3rem, 6vw, 4.5rem);">Strategic <span class="serif-italic">Action</span> for
+                Health.</h1>
+            <p style="margin: 20px auto; opacity: 0.8; max-width: 700px;">Our six flagship programs are designed to
+                break the cycle of malnutrition through education, leadership, and visual tools.</p>
+        </div>
+    </section>
 
+    <!-- Programs Grid -->
     <section class="section">
-        <div class="container grid-3">
-            <div class="card">
-                <div class="card-img"
-                    style="background: var(--light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-                    🌿</div>
-                <div class="card-content">
-                    <span class="card-tag">Flagship</span>
-                    <h3>Hanging Nutrition Bag Project</h3>
-                    <p>Eco-friendly bags with illustrated food menus designed for even illiterate households to follow
-                        healthy meal plans independently.</p>
+        <div class="container">
+            <div class="grid-3 reveal">
+                <div class="card">
+                    <div class="card-img-wrap"><img src="img/cam.jpg" alt="Hanging Bag"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Innovation</span>
+                        <h3>Hanging Nutrition Bag</h3>
+                        <p>Providing illustrated food menus to low-literacy families to ensure daily balanced meals
+                            without needing to read.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-img"
-                    style="background: #fde8d0; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-                    👩</div>
-                <div class="card-content">
-                    <span class="card-tag">Health</span>
-                    <h3>Girl Health Awareness Sessions</h3>
-                    <p>Educational camps focused on adolescent nutrition, menstrual hygiene, and healthy habits in rural
-                        Bagerhat.</p>
+                <div class="card">
+                    <div class="card-img-wrap"><img src="img/camp.jpg" alt="Girl Health"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Education</span>
+                        <h3>Girl Health Awareness</h3>
+                        <p>Specialized workshops for adolescent girls on menstrual hygiene, hygiene and micronutrient
+                            importance.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-img"
-                    style="background: #d0e8fd; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-                    🥗</div>
-                <div class="card-content">
-                    <span class="card-tag">Training</span>
-                    <h3>Family Nutrition Training</h3>
-                    <p>Hands-on workshops for caregivers on affordable healthy cooking using local ingredients.</p>
+                <div class="card">
+                    <div class="card-img-wrap"><img src="img/IMG_20251107_155551.jpg" alt="Youth"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Leadership</span>
+                        <h3>Youth Nutrition Advocates</h3>
+                        <p>Training youth to lead health campaigns in their villages, turning students into teachers.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-img"
-                    style="background: #e8fdd0; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-                    🌟</div>
-                <div class="card-content">
-                    <span class="card-tag">Leadership</span>
-                    <h3>Youth Nutrition Advocates</h3>
-                    <p>Empowering young people to lead health campaigns and speak for their community's nutritional
-                        needs.</p>
+                <div class="card">
+                    <div class="card-img-wrap"><img src="img/IMG_20251107_165425.jpg" alt="Family"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Workshops</span>
+                        <h3>Family Nutrition Training</h3>
+                        <p>Teaching parents how to utilize local, low-cost ingredients to create maximum nutritional
+                            value.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-img"
-                    style="background: #fdd0f3; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-                    🍎</div>
-                <div class="card-content">
-                    <span class="card-tag">Campaign</span>
-                    <h3>Healthy Food Campaign</h3>
-                    <p>Widespread awareness initiatives promoting local superfoods and low-cost nutritional choices.</p>
+                <div class="card">
+                    <div class="card-img-wrap"><img src="img/IMG_20251116_142422.jpg" alt="Healthy Food"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Campaign</span>
+                        <h3>Local Superfoods Drive</h3>
+                        <p>Promoting the consumption of native, seasonal vegetables and fruits that are affordable and
+                            nutritious.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-img"
-                    style="background: #cecece; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-                    📊</div>
-                <div class="card-content">
-                    <span class="card-tag">Research</span>
-                    <h3>Community Research</h3>
-                    <p>Scientific data collection within families to understand the root causes of malnutrition in
-                        Bagerhat.</p>
+                <div class="card">
+                    <div class="card-img-wrap"><img src="img/IMG_20251211_160233.jpg" alt="Research"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Data</span>
+                        <h3>Community Health Research</h3>
+                        <p>Systematically collecting nutritional data from rural households to inform better policy and
+                            intervention.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark" style="text-align: center;">
+        <div class="container reveal">
+            <h2 style="color: white; margin-bottom: 25px;">Support a Specific <span class="serif-italic">Program</span>.
+            </h2>
+            <p style="margin-bottom: 40px; opacity: 0.8;">Your donation can fund a specific workshop or a set of
+                nutrition bags.</p>
+            <a href="donate.html" class="btn btn-gold">Fund a Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div><span class="footer-logo">PNF Foundation</span>
+                    <p style="opacity: 0.7;">Youth-led impact in Bagerhat.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Follow</h4>
+                    <ul class="footer-links">
+                        <li>Facebook</li>
+                        <li>WhatsApp</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-newsletter">
+                        <h4>Update</h4><button class="btn btn-primary"
+                            style="width:100%; font-size: 0.7rem; padding: 10px;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

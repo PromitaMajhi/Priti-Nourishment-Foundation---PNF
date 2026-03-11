@@ -7,97 +7,109 @@
     <title>Support Us | Priti Nourishment Foundation</title>
     <link rel="stylesheet" href="css/style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;600;800&family=Hind+Siliguri:wght@400;700&display=swap"
         rel="stylesheet">
-    <style>
-        .amount-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .amount-btn {
-            padding: 15px;
-            border: 2px solid var(--light);
-            border-radius: 15px;
-            cursor: pointer;
-            text-align: center;
-            transition: 0.3s;
-            font-weight: 700;
-        }
-
-        .amount-btn.active {
-            background: var(--secondary);
-            color: white;
-            border-color: var(--secondary);
-        }
-    </style>
 </head>
 
 <body class="lang-en">
 
+    <!-- Navbar -->
     <nav class="navbar scrolled">
-        <div class="container nav-container">
-            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
-                <div class="logo-text">
-                    <div class="logo-title">PNF Foundation</div>
-                </div>
-            </a>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo"><span
+                    class="logo-title">PNF Foundation</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.html">About</a>
                 <a href="programs.html">Programs</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="volunteer.html">Volunteer</a>
             </div>
-            <a href="donate.html" class="btn btn-primary active">Donate</a>
+            <a href="donate.html" class="btn btn-primary active">Donate Now</a>
         </div>
     </nav>
 
-    <section class="section" style="padding-top: 150px; text-align: center;">
-        <div class="container" style="max-width: 800px;">
-            <div class="section-title">
-                <h2 class="serif" style="font-size: 4rem;">Select your impact.</h2>
-                <p>Choose an amount and see how it helps a family in Bagerhat.</p>
-            </div>
+    <!-- Header -->
+    <section class="section" style="padding-top: 180px; text-align: center; background: var(--bg-cream);">
+        <div class="container reveal">
+            <span class="eyebrow">Direct Impact</span>
+            <h1 style="font-size: clamp(3rem, 6vw, 4.5rem);">Invest in <span class="serif-italic">Human</span>
+                Potential.</h1>
+            <p style="margin: 20px auto; opacity: 0.8; max-width: 600px;">Every contribution directly funds field
+                operations in Bagerhat. We ensure 100% of public donations reach the families.</p>
+        </div>
+    </section>
 
-            <div class="chart-container">
+    <!-- Donation Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container reveal" style="max-width: 900px;">
+            <div class="chart-box">
+                <h3 style="margin-bottom: 30px; text-align: center;">Choose your <span
+                        class="serif-italic">Impact</span></h3>
+
                 <div class="amount-grid">
-                    <div class="amount-btn active" onclick="selAmt(500, 'Feeding one family for a week.', this)">৳ 500
-                    </div>
-                    <div class="amount-btn" onclick="selAmt(2000, 'Nutrition bags for 4 households.', this)">৳ 2,000
-                    </div>
-                    <div class="amount-btn" onclick="selAmt(5000, 'One month of community awareness camp.', this)">৳
-                        5,000</div>
+                    <div class="amount-btn active"
+                        onclick="selAmt(500, 'Provides specialized nutrition bags for one family for a full month.', this)">
+                        ৳ 500</div>
+                    <div class="amount-btn"
+                        onclick="selAmt(2500, 'Funds one complete Adolescent Health awareness camp in a village.', this)">
+                        ৳ 2,500</div>
+                    <div class="amount-btn"
+                        onclick="selAmt(5000, 'Supports five families with continuous nutrition monitoring and advocacy.', this)">
+                        ৳ 5,000</div>
                 </div>
 
-                <div id="impactDisplay"
-                    style="background: var(--light); padding: 30px; border-radius: 20px; margin-bottom: 40px;">
-                    <h4 style="color: var(--primary);">Impact: Feeding one family for a week.</h4>
+                <div class="impact-display-box" id="impactBox">
+                    <h4 style="color: var(--secondary);">Impact: Provides specialized nutrition bags for one family for
+                        a full month.</h4>
                 </div>
 
-                <div class="grid-2" style="text-align: left;">
+                <div class="grid-2" style="margin-top: 50px; align-items: start;">
                     <div>
-                        <h4 style="margin-bottom: 15px;">Manual Donation Info</h4>
-                        <p style="margin-bottom: 10px;"><strong>bKash/Nagad (Personal):</strong><br>+880 1927-704833</p>
-                        <p><strong>Bank Account:</strong><br>Priti Nourishment Foundation<br>Coming Soon...</p>
+                        <h4 style="margin-bottom: 20px;">Manual Payment</h4>
+                        <div style="background: var(--bg-cream); padding: 25px; border-radius: 20px;">
+                            <p style="margin-bottom: 10px;"><strong>bKash / Nagad:</strong></p>
+                            <p style="font-size: 1.25rem; font-weight: 800; color: var(--primary);">+880 1927-704833</p>
+                            <p style="font-size: 0.8rem; margin-top: 5px; opacity: 0.7;">(Personal Number)</p>
+                        </div>
                     </div>
                     <div>
-                        <a href="https://wa.me/8801927704833?text=I want to donate" class="btn btn-gold"
-                            style="width: 100%;">Confirm Donation via WhatsApp</a>
+                        <h4 style="margin-bottom: 20px;">Next Steps</h4>
+                        <p style="margin-bottom: 25px; font-size: 0.95rem;">After making the payment, please share a
+                            screenshot or transaction ID with us on WhatsApp to receive your official digital receipt.
+                        </p>
+                        <a href="https://wa.me/8801927704833?text=Hi, I have just made a donation to PNF."
+                            class="btn btn-gold" style="width: 100%;">Confirm on WhatsApp</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Transparency Reminder -->
+    <section class="section section-dark" style="text-align: center;">
+        <div class="container reveal">
+            <h2 style="color: white; margin-bottom: 20px;">Radical <span class="serif-italic">Transparency</span></h2>
+            <p style="opacity: 0.8; max-width: 600px; margin: 0 auto 40px;">Our annual impact reports are public. We
+                track every taka to ensure it nourishes a life.</p>
+            <a href="about.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">View
+                Impact Reports</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="text-align: center; opacity: 0.6; font-size: 0.85rem;">
+            &copy; 2025 Priti Nourishment Foundation. Together, we nourish.
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
     <script>
         function selAmt(val, impact, btn) {
             document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            document.getElementById('impactDisplay').innerHTML = '<h4 style="color: var(--primary);">Impact: ' + impact + '</h4>';
+            document.getElementById('impactBox').innerHTML = `<h4 style="color: var(--secondary);">Impact: ${impact}</h4>`;
         }
     </script>
 </body>

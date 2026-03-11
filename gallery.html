@@ -4,95 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery & Stories | Priti Nourishment Foundation</title>
+    <title>Gallery | Priti Nourishment Foundation</title>
     <link rel="stylesheet" href="css/style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;600;800&family=Hind+Siliguri:wght@400;700&display=swap"
         rel="stylesheet">
-    <style>
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery-item {
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            height: 350px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(15, 45, 31, 0.7);
-            opacity: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: 0.3s;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body class="lang-en">
 
+    <!-- Navbar -->
     <nav class="navbar scrolled">
-        <div class="container nav-container">
-            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
-                <div class="logo-text">
-                    <div class="logo-title">PNF Foundation</div>
-                </div>
-            </a>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo"><span
+                    class="logo-title">PNF Foundation</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.html">About</a>
                 <a href="programs.html">Programs</a>
                 <a href="gallery.html" class="active">Gallery</a>
                 <a href="volunteer.html">Volunteer</a>
             </div>
-            <a href="donate.html" class="btn btn-primary">Donate</a>
+            <a href="donate.html" class="btn btn-primary">Donate Now</a>
         </div>
     </nav>
 
-    <section class="section" style="padding-top: 150px;">
-        <div class="container">
-            <div class="section-title">
-                <h2>Field Moments</h2>
-                <p>Capturing the smiles and spirits of PNF initiatives.</p>
+    <!-- Header -->
+    <section class="section" style="padding-top: 180px; text-align: center;">
+        <div class="container reveal">
+            <span class="eyebrow">Visual Stories</span>
+            <h1 style="font-size: clamp(3rem, 6vw, 4.5rem);">Witness the <span class="serif-italic">Impact</span>.</h1>
+            <p style="margin: 20px auto; opacity: 0.8; max-width: 600px;">Real moments from our field campaigns across
+                Bagerhat. Every photo represents a family moving towards a healthier future.</p>
+        </div>
+    </section>
+
+    <!-- Photo Grid -->
+    <section class="section" style="padding-top: 50px;">
+        <div class="container gallery-grid reveal">
+            <div class="gallery-item"><img src="img/IMG_20251107_165425.jpg" alt="Field">
+                <div class="gallery-overlay">
+                    <h4>Field Campaign</h4>
+                    <p>Community health sessions in action.</p>
+                </div>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="img/IMG_20251107_165425.jpg" alt="Field">
-                    <div class="gallery-overlay">Community sessions in Bagerhat Sadar.</div>
+            <div class="gallery-item"><img src="img/IMG_20251211_160233.jpg" alt="Field">
+                <div class="gallery-overlay">
+                    <h4>Monitoring</h4>
+                    <p>Tracking the weight and health of children.</p>
                 </div>
-                <div class="gallery-item"><img src="img/IMG_20251211_160233.jpg" alt="Field">
-                    <div class="gallery-overlay">Impact tracking with Beneficiary families.</div>
+            </div>
+            <div class="gallery-item"><img src="img/IMG_20251116_142422.jpg" alt="Field">
+                <div class="gallery-overlay">
+                    <h4>Supplies</h4>
+                    <p>Distributing Hanging Nutrition Bags.</p>
                 </div>
-                <div class="gallery-item"><img src="img/IMG_20251116_142422.jpg" alt="Field">
-                    <div class="gallery-overlay">Volunteer distribution day.</div>
+            </div>
+            <div class="gallery-item"><img src="img/IMG_20251211_160536.jpg" alt="Field">
+                <div class="gallery-overlay">
+                    <h4>Workshops</h4>
+                    <p>Adolescent girls learning about hygiene.</p>
                 </div>
-                <div class="gallery-item"><img src="img/IMG_20251211_160536.jpg" alt="Field">
-                    <div class="gallery-overlay">Health awareness workshop for adolescents.</div>
+            </div>
+            <div class="gallery-item"><img src="img/IMG_20251107_155551.jpg" alt="Field">
+                <div class="gallery-overlay">
+                    <h4>Youth Group</h4>
+                    <p>Our champions for community health.</p>
                 </div>
-                <div class="gallery-item"><img src="img/IMG_20251107_155551.jpg" alt="Field">
-                    <div class="gallery-overlay">Youth nutrition advocates session.</div>
-                </div>
-                <div class="gallery-item"><img src="img/IMG_20251107_154244.jpg" alt="Field">
-                    <div class="gallery-overlay">Our team on the ground.</div>
+            </div>
+            <div class="gallery-item"><img src="img/IMG_20251107_154244.jpg" alt="Field">
+                <div class="gallery-overlay">
+                    <h4>Meeting</h4>
+                    <p>Strategic planning on the ground.</p>
                 </div>
             </div>
         </div>
@@ -101,34 +84,47 @@
     <!-- Impact Stories -->
     <section class="section section-dark">
         <div class="container">
-            <div class="section-title">
-                <h2 style="color:white">Stories of Change</h2>
+            <div class="section-title reveal">
+                <span class="eyebrow" style="color: var(--accent-light);">Testimonials</span>
+                <h2>Voices of <span class="serif-italic">Change</span></h2>
             </div>
-            <div class="grid-3">
-                <div class="card" style="padding: 40px; text-align: center;">
-                    <div style="font-size: 2rem; margin-bottom: 20px;">🗣️</div>
-                    <p style="font-style: italic;">"The bag changed how I cook for my children. Now I follow the
-                        pictures every day."</p>
-                    <h4 style="margin-top: 20px; color: var(--secondary);">Fatema Begum</h4>
-                    <p style="font-size: 0.8rem; opacity: 0.7;">Mother of 3, Bagerhat</p>
+            <div class="grid-3 reveal">
+                <div class="card"
+                    style="padding: 40px; text-align: center; background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
+                    <p style="font-style: italic; opacity: 0.9;">"The nutrition bag makes it so easy to understand what
+                        my baby needs every day."</p>
+                    <h4 style="margin-top: 25px; color: var(--accent-light);">Fatema Begum</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.6;">Bagerhat Resident</p>
                 </div>
-                <div class="card" style="padding: 40px; text-align: center;">
-                    <div style="font-size: 2rem; margin-bottom: 20px;">🗣️</div>
-                    <p style="font-style: italic;">"PNF didn't just give us food information — they gave our family
-                        dignity and knowledge."</p>
-                    <h4 style="margin-top: 20px; color: var(--secondary);">Karim Mia</h4>
-                    <p style="font-size: 0.8rem; opacity: 0.7;">Beneficiary Farmer</p>
+                <div class="card"
+                    style="padding: 40px; text-align: center; background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
+                    <p style="font-style: italic; opacity: 0.9;">"I've learned hygiene practices that I'm now teaching
+                        my friends and siblings."</p>
+                    <h4 style="margin-top: 25px; color: var(--accent-light);">Tahmina, 14</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.6;">Student & Advocate</p>
                 </div>
-                <div class="card" style="padding: 40px; text-align: center;">
-                    <div style="font-size: 2rem; margin-bottom: 20px;">🗣️</div>
-                    <p style="font-style: italic;">"I learned about nutrition and now I teach my younger siblings what
-                        to eat to stay healthy."</p>
-                    <h4 style="margin-top: 20px; color: var(--secondary);">Rahim, 16</h4>
-                    <p style="font-size: 0.8rem; opacity: 0.7;">Youth Volunteer</p>
+                <div class="card"
+                    style="padding: 40px; text-align: center; background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
+                    <p style="font-style: italic; opacity: 0.9;">"Being a volunteer for PNF gave me a sense of purpose
+                        in my own village."</p>
+                    <h4 style="margin-top: 25px; color: var(--accent-light);">Arifur Rahman</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.6;">Youth Volunteer</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <span class="footer-logo">PNF Foundation</span>
+            <p style="opacity: 0.7; margin-bottom: 40px;">Bagerhat, Bangladesh</p>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; font-size: 0.85rem; opacity: 0.5;">
+                &copy; 2025 Priti Nourishment Foundation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

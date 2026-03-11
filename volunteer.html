@@ -4,107 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join as Volunteer | Priti Nourishment Foundation</title>
+    <title>Join Us | Priti Nourishment Foundation</title>
     <link rel="stylesheet" href="css/style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;600;800&family=Hind+Siliguri:wght@400;700&display=swap"
         rel="stylesheet">
-    <style>
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 14px 20px;
-            border-radius: 12px;
-            border: 1px solid #ddd;
-            font-family: inherit;
-        }
-    </style>
 </head>
 
 <body class="lang-en">
 
+    <!-- Navbar -->
     <nav class="navbar scrolled">
-        <div class="container nav-container">
-            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
-                <div class="logo-text">
-                    <div class="logo-title">PNF Foundation</div>
-                </div>
-            </a>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo"><span
+                    class="logo-title">PNF Foundation</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.html">About</a>
                 <a href="programs.html">Programs</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="volunteer.html" class="active">Volunteer</a>
             </div>
-            <a href="donate.html" class="btn btn-primary">Donate</a>
+            <a href="donate.html" class="btn btn-primary">Donate Now</a>
         </div>
     </nav>
 
-    <section class="section" style="padding-top: 150px;">
-        <div class="container grid-2">
-            <div>
-                <h2 class="serif" style="font-size: 3.5rem;">Be the Change.</h2>
-                <p style="margin: 20px 0;">PNF is a youth-led movement. We empower the younger generation to take charge
-                    of their community's health. Join our mission as a volunteer.</p>
+    <!-- Header -->
+    <section class="section" style="padding-top: 180px; background: var(--primary); color: white;">
+        <div class="container reveal">
+            <span class="eyebrow" style="color: var(--accent-light);">Drive Change</span>
+            <h1 style="color: white; font-size: clamp(3rem, 6vw, 4.5rem);">Be the <span
+                    class="serif-italic">Pulse</span> of PNF.</h1>
+            <p style="margin-top: 20px; opacity: 0.8; max-width: 600px;">We are a youth-led movement. Your energy can
+                transform the nutritional landscape of rural Bangladesh.</p>
+        </div>
+    </section>
 
-                <div class="faq-container" style="margin-top: 50px;">
-                    <h3 style="margin-bottom: 20px;">Common Questions</h3>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">Who can join? <span
+    <!-- Form & FAQ -->
+    <section class="section">
+        <div class="container grid-2">
+            <div class="reveal">
+                <h2 class="en-content">Why <span class="serif-italic">Volunteer</span> with us?</h2>
+                <h2 class="bn-content">কেন আমাদের সাথে <span class="serif-italic">কাজ করবেন</span>?</h2>
+                <p style="margin: 30px 0;">As a volunteer, you don't just help — you lead. We provide the training, the
+                    tools, and the community. You provide the heart and the hustle.</p>
+
+                <div class="faq-container">
+                    <div class="faq-item reveal">
+                        <div class="faq-question" onclick="toggleFaq(this)">Who can become a volunteer? <span
                                 class="faq-icon">▼</span></div>
-                        <div class="faq-answer">Any youth aged 16-30 with a passion for nutrition.</div>
+                        <div class="faq-answer">Any youth aged 16-30 with a passion for nutrition and community
+                            development.</div>
                     </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">Training provided? <span
+                    <div class="faq-item reveal">
+                        <div class="faq-question" onclick="toggleFaq(this)">Is training provided? <span
                                 class="faq-icon">▼</span></div>
-                        <div class="faq-answer">Yes, we provide 2 days of basic nutrition training.</div>
+                        <div class="faq-answer">Yes! Every volunteer goes through our 2-day "Nutrition Advocacy"
+                            certification program.</div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <div class="faq-question" onclick="toggleFaq(this)">Time commitment? <span
+                                class="faq-icon">▼</span></div>
+                        <div class="faq-answer">We offer flexible roles ranging from "Event Support" (one-time) to
+                            "Village Lead" (6 months).</div>
                     </div>
                 </div>
             </div>
 
-            <div class="chart-container">
-                <h3>Volunteer Application</h3>
-                <form id="volunteerForm" style="margin-top: 30px;">
-                    <div class="form-group"><label>Full Name</label><input type="text" required></div>
-                    <div class="form-group"><label>Email Address</label><input type="email" required></div>
-                    <div class="form-group"><label>Phone/WhatsApp</label><input type="tel" required></div>
-                    <div class="form-group">
-                        <label>Role Interest</label>
-                        <select>
-                            <option>Field Survey</option>
-                            <option>Health Education</option>
-                            <option>Digital Advocacy</option>
-                            <option>Community Outreach</option>
-                        </select>
-                    </div>
-                    <div class="form-group"><label>Why do you want to join?</label><textarea rows="4"></textarea></div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
-                </form>
+            <div class="reveal">
+                <div class="chart-box">
+                    <h3 style="margin-bottom: 30px;">Application Form</h3>
+                    <form id="volunteerForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="e.g. Arif Rahman" required>
+                        </div>
+                        <div class="grid-2" style="gap: 20px; margin-bottom: 0;">
+                            <div class="form-group"><label>Email</label><input type="email" placeholder="arif@email.com"
+                                    required></div>
+                            <div class="form-group"><label>WhatsApp</label><input type="tel" placeholder="+880..."
+                                    required></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Role Preference</label>
+                            <select>
+                                <option>Field Ambassador</option>
+                                <option>Health Educator</option>
+                                <option>Digital Advocate</option>
+                                <option>Research Asst.</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Motivation</label>
+                            <textarea rows="4" placeholder="Tell us why you want to join the movement..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <span class="footer-logo">PNF Foundation</span>
+            <p style="opacity: 0.6; font-size: 0.9rem;">Empowering the youth to nourish the nation.</p>
+            <div
+                style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; opacity: 0.5; font-size: 0.8rem;">
+                &copy; 2025 Priti Nourishment Foundation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
     <script>
-        document.getElementById('volunteerForm').onsubmit = function (e) {
+        document.getElementById('volunteerForm').onsubmit = (e) => {
             e.preventDefault();
-            alert('Thank you for applying! Our team will contact you via WhatsApp shortly.');
-            this.reset();
-        }
+            alert('Application Shared! Our youth leads will contact you on WhatsApp.');
+            e.target.reset();
+        };
     </script>
 </body>
 

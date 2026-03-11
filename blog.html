@@ -4,90 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog & News | Priti Nourishment Foundation</title>
+    <title>Blog | Priti Nourishment Foundation</title>
     <link rel="stylesheet" href="css/style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;600;800&family=Hind+Siliguri:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body class="lang-en">
 
+    <!-- Navbar -->
     <nav class="navbar scrolled">
-        <div class="container nav-container">
-            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo">
-                <div class="logo-text">
-                    <div class="logo-title">PNF Foundation</div>
-                </div>
-            </a>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="data/logo/logo%20of%20pnf.jpeg" alt="PNF Logo"><span
+                    class="logo-title">PNF Foundation</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.html">About</a>
                 <a href="programs.html">Programs</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="blog.html" class="active">Blog</a>
             </div>
-            <a href="donate.html" class="btn btn-primary">Donate</a>
+            <a href="donate.html" class="btn btn-primary">Donate Now</a>
         </div>
     </nav>
 
-    <section class="section" style="padding-top: 150px;">
+    <!-- Header -->
+    <section class="section" style="padding-top: 180px; text-align: center;">
+        <div class="container reveal">
+            <span class="eyebrow">Perspectives</span>
+            <h1 style="font-size: clamp(3rem, 6vw, 4.5rem);">Knowledge is <span class="serif-italic">Nourishment</span>.
+            </h1>
+            <p style="margin: 20px auto; opacity: 0.8; max-width: 600px;">Updates from the field, nutritional guides,
+                and stories of the youth leaders reshaping Bagerhat.</p>
+        </div>
+    </section>
+
+    <!-- Blog Selection -->
+    <section class="section" style="padding-top: 0;">
         <div class="container">
-            <div class="section-title">
-                <h2>Stories & Updates</h2>
-                <div style="display: flex; justify-content: center; gap: 15px; margin-top: 30px;">
-                    <button class="filter-btn active" onclick="switchBlog('all', this)">All</button>
-                    <button class="filter-btn" onclick="switchBlog('nutrition', this)">Nutrition</button>
-                    <button class="filter-btn" onclick="switchBlog('health', this)">Health</button>
-                </div>
+            <div class="filter-container reveal">
+                <button class="filter-btn active" onclick="switchBlog('all', this)">All Stories</button>
+                <button class="filter-btn" onclick="switchBlog('nutrition', this)">Nutrition Tips</button>
+                <button class="filter-btn" onclick="switchBlog('impact', this)">Impact News</button>
             </div>
 
-            <div class="grid-3" id="blogEntries">
+            <div class="grid-3 reveal">
                 <div class="card blog-card" data-cat="nutrition">
-                    <div class="card-img"><img src="img/IMG-20251119-WA0019.jpg" alt="Blog 1"></div>
-                    <div class="card-content">
-                        <span class="card-tag">Nutrition</span>
-                        <h3>Power of Visual Menus</h3>
-                        <p>How our simple bag design is reducing nutritional gaps in rural households.</p>
-                        <small>March 11, 2025 • 4 min read</small>
+                    <div class="card-img-wrap"><img src="img/IMG-20251119-WA0019.jpg" alt="Blog"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Feature</span>
+                        <h3>The Visual Meal Revolution</h3>
+                        <p>How the Hanging Nutrition Bag became the most requested tool in Bagerhat Sadar.</p>
+                        <a href="#" style="font-weight: 800; color: var(--secondary); text-decoration: none;">Read
+                            Article &rarr;</a>
                     </div>
                 </div>
-                <div class="card blog-card" data-cat="health">
-                    <div class="card-img"><img src="img/IMG-20251119-WA0021.jpg" alt="Blog 2"></div>
-                    <div class="card-content">
-                        <span class="card-tag">Health</span>
-                        <h3>Youth as Health Educators</h3>
-                        <p>Engaging local students to spread menstrual hygiene awareness safely.</p>
-                        <small>Feb 22, 2025 • 6 min read</small>
+                <div class="card blog-card" data-cat="impact">
+                    <div class="card-img-wrap"><img src="img/IMG-20251119-WA0021.jpg" alt="Blog"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Update</span>
+                        <h3>Partnering for Change</h3>
+                        <p>A look into our strategic collaboration with GAIN and the SUN Youth Network.</p>
+                        <a href="#" style="font-weight: 800; color: var(--secondary); text-decoration: none;">Read
+                            Article &rarr;</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="chart-container" style="margin-top: 80px; text-align: center;">
-                <h3>Subscribe for Monthly Impact Reports</h3>
-                <p style="color: var(--text-muted); margin: 15px 0 25px;">Stay updated with our progress on the ground.
-                </p>
-                <div style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
-                    <input type="email" placeholder="Your Email"
-                        style="flex: 1; padding: 12px 20px; border-radius: 50px; border: 1px solid #ddd;">
-                    <button class="btn btn-primary">Subscribe</button>
+                <div class="card blog-card" data-cat="nutrition">
+                    <div class="card-img-wrap"><img src="img/IMG_20251107_155551.jpg" alt="Blog"></div>
+                    <div class="card-body">
+                        <span class="eyebrow">Health</span>
+                        <h3>Superfoods of Bangladesh</h3>
+                        <p>Five local vegetables that pack more punch than imported supplements.</p>
+                        <a href="#" style="font-weight: 800; color: var(--secondary); text-decoration: none;">Read
+                            Article &rarr;</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Newsletter -->
+    <section class="section">
+        <div class="container">
+            <div class="footer-newsletter reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2 style="color: white; margin-bottom: 20px;">Get Monthly <span class="serif-italic">Updates</span>.
+                </h2>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 30px;">Subscribe to our journal for impact
+                    stories and health tips delivered to your inbox.</p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed!')"
+                    style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                    <input type="email" placeholder="Your email address"
+                        style="padding: 15px 30px; border-radius: 50px; border: none; min-width: 300px; outline: none;">
+                    <button class="btn btn-gold">Join the Movement</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="text-align: center; opacity: 0.6; font-size: 0.9rem;">
+            &copy; 2025 Priti Nourishment Foundation.
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
     <script>
-        function switchBlog(filter, btn) {
+        function switchBlog(cat, btn) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-
             document.querySelectorAll('.blog-card').forEach(card => {
-                if (filter === 'all' || card.getAttribute('data-cat') === filter) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
+                if (cat === 'all' || card.getAttribute('data-cat') === cat) card.style.display = 'flex';
+                else card.style.display = 'none';
             });
         }
     </script>
